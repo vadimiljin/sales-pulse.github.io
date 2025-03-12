@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Pulse - Redirecting to Our New Domain</title>
+    <meta name="description" content="Sales Pulse has moved to a new domain. You are being redirected to our new website.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://sales-pulse.com/">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Sales Pulse - The real-time sales team news feed">
+    <meta property="og:description" content="Sales Pulse connects with your CRM to keep you instantly updated on sales reps’ activities.">
+    <meta property="og:url" content="https://sales-pulse.com/">
+    <meta property="og:type" content="website">
+    
+    <meta http-equiv="refresh" content="3; url=https://sales-pulse.com/">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .redirect-message {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .redirect-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .redirect-link:hover {
+            background-color: #2980b9;
+        }
+        .loader {
+            margin: 20px auto;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    
+    <!-- JavaScript redirect as a fallback -->
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "https://sales-pulse.com/";
+            }, 3000);
+        }
+    </script>
+</head>
+<body>
+    <h1>Sales Pulse</h1>
+    <div class="redirect-message">
+        <p>Our website has moved to a new domain.</p>
+        <p>You will be automatically redirected to our new website in 3 seconds.</p>
+        <div class="loader"></div>
+        <p>If you are not redirected automatically, please click the link below:</p>
+        <a href="https://sales-pulse.com/" class="redirect-link">Go to sales-pulse.com</a>
+    </div>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Sales Pulse",
+        "url": "https://sales-pulse.com/",
+        "logo": "https://cdn.prod.website-files.com/66d1127faa0eb818784b1621/6793912265f8bde9bcdc6260_salespulse-logo.svg",
+        "description": "Sales Pulse connects with your CRM to keep you instantly updated on sales reps’ activities."
+    }
+    </script>
+</body>
+</html>
